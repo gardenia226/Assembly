@@ -14,11 +14,11 @@ START:   MOV AX,DATA
          MOV BX,1
 NEXT:    ADD AX,BX
          INC BX
-		     INC BX
-		     DEC CX
-		     JNE NEXT
-		     MOV SUM,AX
-		     MOV AH,4CH
-		     INT 21H
+         INC BX
+         DEC CX
+         JNE NEXT
+         MOV SUM,AX
+         MOV AH,4CH
+         INT 21H
 CODE     ENDS
          END START
